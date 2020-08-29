@@ -1,0 +1,14 @@
+1. 3 Kesalahan besar yg sering dilakukan QA:
+	- Melakukan test tanpa memahami bisnis proses dari sistem yg di uji, hal biasanya ditandai dengan testing skenario yang kurang fundamental terhadap user ekspektasi
+		@ solusi : Pelajari bisnis proses, sistem spesifikasi dan lakukan pendekatan kepada user atau product owner
+	- melakukan functional test tanpa skenario yg sistematis sehingga, eksekusi test keluar dari scope yang seharusnya atau tidak mengcover seluruh ekspektasi user
+		@ solusi : gunakan platform (ex: kiwi) yang baik untuk menyusun test skenario dan mendokumentasikan hasil eksekusi. sehinggal report hasil test dapat diandalkan
+	- bug reporting sering tidak ter-record dengan baik.
+		@ solusi: gunakan platform (ex: Jira) untuk bug tracking dan pastikan selalu update agar bug reporting dapat diandalkan
+
+2. Point2 terpenting dalam menganalisa dan membuat test skenario:
+	- Pelajari dokumen standard yang digunakan dalam sistem, misal apabila sistem menggunakan XSLT, maka perlu dipelajari XSLT documentation agar test case dapat mencakup standard ekspektasi XSL. Dengan begitu meskipun user tidak merincikannya dalam dokumen functional requirement, hasil uji tetap dapat diandalkan. 
+	- Pelajari dokumen functional requirement untuk menentukan batas-batas pengujian
+	- selalu aktif berkomunikasi dengan product owner mengenai requirement, agar test skenario selalu update dan beradaptasi dengan cepat bilamana ada perubahan requirement.
+	- persiapkan data pengujian sebaik mungkin sebelum melakukan eksekusi.
+	- test skenario development semestinya dapat dikerjakan secara pararel dengan proses code development. dan ikuti perkembangan code development secara berkala agar dapat mengantisipasi test case yang mungkin tidak sesuai.
